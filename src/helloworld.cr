@@ -61,4 +61,30 @@ module Helloworld
 
 	p! 4 + 5 * 2,
   	(4 + 5) * 2
+
+	puts
+
+	# Number Methods
+	p! -5.abs,   # absolute value
+	4.3.round, # round to nearest integer
+	5.even?,   # odd/even check
+	10.gcd(16) # greatest common divisor
+
+	puts
+
+	# Math Methods
+	p! Math.cos(1),     # cosine
+	Math.sin(1),      # sine
+	Math.tan(1),      # tangent
+	Math.log(42),     # natural logarithm
+	Math.log10(312),  # logarithm to base 10
+	Math.log(312, 5), # logarithm to base 5
+	Math.sqrt(9)      # square root
+
+	puts
+
+	# Constant
+	p! Math::E,  # Euler's number
+	Math::TAU, # Full circle constant (2 * PI)
+	Math::PI   # Archimedes' constant (TAU / 2)
 end
