@@ -7,4 +7,11 @@ module Helloworld
   puts message
   puts message
   puts message
+
+  p! typeof(message)
+
+  message = 73
+
+  p! typeof(message)
+
 end
