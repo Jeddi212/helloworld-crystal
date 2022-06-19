@@ -46,4 +46,19 @@ module Helloworld
 	p! 1 <=> 1,
   	2 <=> 1,
   	1 <=> 2
+
+	# Opeators
+	p! 1 + 1, # addition
+	1 - 1,  # subtraction
+	2 * 3,  # multiplication
+	2 ** 4, # exponentiation
+	2 / 3,  # division
+	2 // 3, # floor division
+	3 % 2,  # modulus
+	-1      # negation (unary)
+
+	puts
+
+	p! 4 + 5 * 2,
+  	(4 + 5) * 2
 end
