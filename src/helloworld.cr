@@ -334,5 +334,68 @@ module Helloworld
   elsif message.starts_with?("Hello")
     puts "Hello to you, too!"
   end
+  
+  puts
+
+  ### Methods
+  def self.say_hello # self is used to make it module method
+    puts "Hello Penny!"
+  end
+  
+  say_hello
+  say_hello
+  say_hello() # syntactically equivalent method call with parentheses
+
+  puts
+
+  # Arguments
+  def self.say_hello(recipient)
+    puts "Hello #{recipient}!"
+  end
+  
+  say_hello "World"
+  say_hello "Crystal"
+
+  puts
+
+  # Default Arguments
+  def self.say_hello(recipient = "Heaven")
+    puts "Hello #{recipient}!"
+  end
+  
+  say_hello
+  say_hello "Crystal"
+
+  puts
+
+  # Type restrictions
+  def self.say_hello(recipient : String)
+    puts "Hello #{recipient}!"
+  end
+  
+  say_hello "Heaven"
+  say_hello "Destiny"
+  
+  puts
+  
+  # Overloading
+  # This methods greets *recipient*.
+  def self.say_hello(recipient : String)
+    puts "Hello #{recipient}!"
+  end
+
+  # This method greets *times* times.
+  def self.say_hello(times : Int32)
+    puts "Hello " * times
+  end
+
+  say_hello "World"
+  say_hello 3
+
+  def self.test_output
+    9.000
+  end
+
+  p! test_output
 
 end
