@@ -6,8 +6,13 @@ authors:
 
 targets:
   helloworld:
-    main: src/helloworld.cr
+    main: src/main.cr
 
 crystal: 1.4.1
 
 license: MIT
+
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 1.0.0

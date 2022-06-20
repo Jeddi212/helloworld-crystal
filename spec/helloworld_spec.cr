@@ -4,6 +4,7 @@ describe Helloworld do
   # TODO: Write tests
 
   it "works" do
-    false.should eq(true)
+    output = Helloworld.say_hello
+    output.should eq("Hello World")
   end
 end
