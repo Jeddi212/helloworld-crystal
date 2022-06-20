@@ -261,4 +261,78 @@ module Helloworld
     a != b,  # inequivalence (XOR)
     a == b   # equivalence
 
+  puts
+
+  ### Control Flow
+  # Conditionals
+
+  message = "Hello World"
+
+  if message.starts_with?("Hello")
+    puts "Hello to you, too!"
+  end
+
+  message = "Hello World"
+
+  if message.starts_with?("Hello") || message.starts_with?("Hi")
+    puts "Hey there!"
+  end
+
+  puts
+
+  message = "_Hello World"
+
+  if !message.starts_with?("Hello")
+    puts "I didn't understand that."
+  end
+
+  # Unless is like if using negates { !if }
+  unless message.starts_with?("Hello")
+    puts "I didn't understand that. From Unless"
+  end
+
+  str = "Crystal is awesome"
+  index = str.index("aw")
+
+  # crystal compiler force us to handle nil values
+  if !index.nil? # can shorter ::: if index ( cause nil value is a falsey )
+    puts str
+    puts "#{" " * index}^^"
+  end
+
+  # Else
+  message = "Hello World"
+
+  if message.starts_with?("Hello")
+    puts "Hello to you, too!"
+  else
+    puts "I didn't understand that."
+  end
+
+  # More branches
+  message = "Bye World"
+
+  if message.starts_with?("Hello")
+    puts "Hello to you, too!"
+  elsif message.starts_with?("Bye")
+    puts "See you later!"
+  else
+    puts "I didn't understand that."
+  end
+
+  message = "Hello Crystal"
+
+  # Pay attention to branches order
+  if message.starts_with?("Hello")
+    puts "Hello to you, too!"
+  elsif message.includes?("Crystal")
+    puts "Shine bright like a crystal."
+  end
+
+  if message.includes?("Crystal")
+    puts "Shine bright like a crystal."
+  elsif message.starts_with?("Hello")
+    puts "Hello to you, too!"
+  end
+
 end
