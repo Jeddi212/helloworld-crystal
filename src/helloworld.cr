@@ -230,4 +230,35 @@ module Helloworld
 	# gsub applies to all instances
   	message.gsub("World", "Crystal")
 
+  puts
+
+	### NIL
+	p! "Crystal is awesome".index("aw"), "Crystal is awesome".index("xxxx")
+
+	# Bool
+	p! true, false
+
+  puts
+
+	# Boolean Algebra
+	a = true
+	b = false
+	p! a && b, # conjunction (AND)
+  	a || b,  # disjunction (OR)
+  	!a,      # negation (NOT)
+  	a != b,  # inequivalence (XOR)
+  	a == b   # equivalence
+
+  puts
+
+  # Truthiness
+  a = "foo"
+  b = nil
+
+  p! a && b, # conjunction (AND)
+    a || b,  # disjunction (OR)
+    !a,      # negation (NOT)
+    a != b,  # inequivalence (XOR)
+    a == b   # equivalence
+
 end
