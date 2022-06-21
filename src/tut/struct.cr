@@ -1,3 +1,8 @@
+# Struct located in stack 
+# :: so its passed by value
+# when passed to methods
+# when returned from methods
+# or assigned to varibales
 struct Location
     property lat : Float32
     property long : Float32

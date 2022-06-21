@@ -1,3 +1,5 @@
+# Class located in heap 
+# :: so its passed by reference
 class Animal
     def initialize(name : String)
         puts "Animal created"
